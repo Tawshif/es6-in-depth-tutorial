@@ -166,3 +166,57 @@
 // console.log(mult5(5));
 // console.log(double(5));
 
+// function* letterMaker(){
+// 	yield 'a';
+// 	yield 'b';
+// 	yield 'c';
+// }
+
+// let letterGen = letterMaker();
+
+// console.log(letterGen.next().value);
+// console.log(letterGen.next().value);
+// console.log(letterGen.next().value);
+// console.log(letterGen.next().value);
+
+// function* countMaker(){
+// 	let count = 0;
+
+// 	while (count < 4 ) {
+// 		yield count += 1;
+// 	}
+// }
+
+// let counter = countMaker();
+// console.log(counter.next().value);
+// console.log(counter.next().value);
+// console.log(counter.next().value);
+// console.log(counter.next().value);
+
+// let p = new Promise((resolve, reject) => {
+// 	// resolve("Resolved promis data");
+// 	// reject("Rejected promis data");
+// 	setTimeout(() => resolve("Resolved promis data"), 1000);
+// })
+
+// p.then(response => console.log(response))
+// 	.catch(error => console.log(error));
+
+// console.log('after promise consumption');
+
+// const root = 'https://jsonplaceholder.typicode.com/posts/1';
+// const root = "https://www.googleapis.com/books/v1/volumes?q=isbn:0747532699"
+
+// fetch(root , { method:"GET"})
+// 	.then(response => response.json())
+// 	.then(json => console.log(json));
+
+
+import React from 'react';
+import ReactDOM from 'react-dom';
+import Global from './components/Global';
+
+ReactDOM.render(
+	<Global />, 
+	document.getElementById('root')
+);
